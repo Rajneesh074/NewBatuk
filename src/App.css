@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.auth-main::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  z-index: -1;
+  background: #191f28;
+}
+
+.card::before {
+  width: 150px;
+  padding: 5px
+}
+
+.body:after {
+  height: 5px;
+  width: 100%;
+  position: fixed;
+  content: '';
+  z-index: 999;
+}
+
+.auth-main:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  /* background: url(../../assets/images/auth_bg.jpg) no-repeat top left fixed; */
+}
+
+#wrapper:after {
+  right: 0;
+}
+
+#wrapper:before,
+#wrapper:after {
+  height: 100vh;
+  /* width: 5px; */
+  position: fixed;
+  content: '';
+  z-index: 999;
+  top: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+#wrapper:before {
+  left: 0;
+}
+
+.headerName {
+  font-size: 36px;
+  align-self: center;
+  text-align: center;
+}
+
+.headerContainer {
+  flex-direction: row;
+}
+
+.jvectormap-container {
+  height: 300px;
+}
+
+
+/* my css */
+/* Goldify */
+.btn-gradient-2 {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn-gradient-2 {
+  background: linear-gradient(rgb(52, 51, 51), rgb(51, 49, 49)) padding-box,
+    linear-gradient(to right, #fff387, #b89448, #97852a) border-box;
+  border-radius: 20px;
+  width: 80px;
+  /* padding: 5px; */
+  height: 80px;
+  border: 4px solid #ffc107;
+}
+
+.goldText {
+  color: #dcb53e;
+}
+
+.logo-head {
+  background: -webkit-linear-gradient(#fff387,
+      #b89448,
+      #97852a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5px;
+}
+
+
+/* silvify */
+.silvify-logo {
+
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+}
+
+.silvify-logo {
+  background: linear-gradient(rgb(52, 52, 52), rgb(54, 53, 53)) padding-box,
+    linear-gradient(to right, #e9e6e6,
+      #c5c1c1,
+      #696868) border-box;
+  border-radius: 20px;
+  width: 70px;
+  height: 70px;
+  border: 4px solid transparent;
+}
+
+.silvify-color {
+  background: -webkit-linear-gradient(#d6d6d6,
+      #d4d0d0,
+      #505050);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+img{
+  width: 100px;
+}
